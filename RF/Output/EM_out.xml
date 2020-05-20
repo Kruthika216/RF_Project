@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.6.3 on win32)" generated="20200515 15:40:58.123" rpa="false">
+<suite id="s1" name="Run Platform Regression" source="C:\Users\kruks\eclipse-workspace\RF\TestSuits\Standaloneregression\run_platform_regression.robot">
+<kw name="Open Connection And Login" library="common_keyword" type="setup">
+<doc>Connection established to remote machine 135.250.138.217</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Trying to connect ${HostName}</arg>
+</arguments>
+<msg timestamp="20200515 15:40:58.866" level="INFO">Trying to connect 135.250.138.217</msg>
+<status status="PASS" starttime="20200515 15:40:58.866" endtime="20200515 15:40:58.866"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<arguments>
+<arg>${HostName}</arg>
+</arguments>
+<status status="PASS" starttime="20200515 15:40:58.866" endtime="20200515 15:40:58.867"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<arguments>
+<arg>${User}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200515 15:40:58.868" level="INFO">Logging into '135.250.138.217:22' as 'aorAuto'.</msg>
+<msg timestamp="20200515 15:41:00.728" level="INFO">Read output: Last login: Fri May 15 15:39:19 2020 from 10.143.176.59
+[aorAuto@pokhran Platform]$</msg>
+<msg timestamp="20200515 15:41:00.728" level="INFO">c:\users\kruks\appdata\local\continuum\anaconda3\lib\site-packages\cryptography\hazmat\backends\openssl\ciphers.py:114: UserWarning: implicit cast from 'char *' to a different pointer type: will be forbidden in the future (check that the types are as you expect; use an explicit ffi.cast() if they are correct)
+  operation
+c:\users\kruks\appdata\local\continuum\anaconda3\lib\site-packages\cryptography\hazmat\backends\openssl\ciphers.py:140: UserWarning: implicit cast from 'char *' to a different pointer type: will be forbidden in the future (check that the types are as you expect; use an explicit ffi.cast() if they are correct)
+  self._backend._ffi.from_buffer(data), len(data)</msg>
+<status status="PASS" starttime="20200515 15:40:58.867" endtime="20200515 15:41:00.729"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:40:58.865" endtime="20200515 15:41:00.729"></status>
+</kw>
+<test id="s1-t1" name="Execute AORREG-27">
+<kw name="Run Test Case" library="common_keyword">
+<doc>Running platform regression individual test case</doc>
+<arguments>
+<arg>AORREG-27</arg>
+<arg>PASSED:FM:Grouping of Alarms</arg>
+<arg>None</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${IS_MULTI_TC}'=='None'</arg>
+<arg>Concatinate</arg>
+<arg>${TC_ID}</arg>
+<arg>.py</arg>
+<arg>ELSE</arg>
+<arg>Concatinate</arg>
+<arg>${IS_MULTI_TC}</arg>
+<arg>.py</arg>
+</arguments>
+<assign>
+<var>${TC_NAME}</var>
+</assign>
+<kw name="Concatinate" library="common_keyword">
+<doc>Concatination strings using built in keyword and return results</doc>
+<arguments>
+<arg>${TC_ID}</arg>
+<arg>.py</arg>
+</arguments>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${STR1}</arg>
+<arg>${STR2}</arg>
+</arguments>
+<assign>
+<var>${CATSTR}</var>
+</assign>
+<msg timestamp="20200515 15:41:00.736" level="INFO">${CATSTR} = AORREG-27.py</msg>
+<status status="PASS" starttime="20200515 15:41:00.735" endtime="20200515 15:41:00.736"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:41:00.734" endtime="20200515 15:41:00.737"></status>
+</kw>
+<msg timestamp="20200515 15:41:00.737" level="INFO">${TC_NAME} = AORREG-27.py</msg>
+<status status="PASS" starttime="20200515 15:41:00.734" endtime="20200515 15:41:00.737"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${Environment}</arg>
+<arg>_ENV</arg>
+</arguments>
+<assign>
+<var>${EnvName}</var>
+</assign>
+<msg timestamp="20200515 15:41:00.738" level="INFO">${EnvName} = RATE4_ENV</msg>
+<status status="PASS" starttime="20200515 15:41:00.737" endtime="20200515 15:41:00.738"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing cd ${AutomationPath};python ${TC_NAME}</arg>
+</arguments>
+<msg timestamp="20200515 15:41:00.739" level="INFO">Executing cd /home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/bin/;python AORREG-27.py</msg>
+<status status="PASS" starttime="20200515 15:41:00.738" endtime="20200515 15:41:00.739"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${IS_MULTI_TC}'=='None'</arg>
+<arg>Executing Command</arg>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName}</arg>
+<arg>ELSE</arg>
+<arg>Executing Command</arg>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName} ${TC_ID} ${TC_ID}</arg>
+</arguments>
+<assign>
+<var>${RESULT}</var>
+</assign>
+<kw name="Executing Command" library="common_keyword">
+<doc>Executing commands in server</doc>
+<arguments>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName}</arg>
+</arguments>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>${CMD}</arg>
+</arguments>
+<assign>
+<var>${OUTPUT}</var>
+</assign>
+<msg timestamp="20200515 15:41:00.742" level="INFO">Executing command 'cd /home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/bin/;python AORREG-27.py RATE4_ENV'.</msg>
+<msg timestamp="20200515 15:41:53.249" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20200515 15:41:53.249" level="INFO">${OUTPUT} = [94mExexuting: AORREG-27
+[0m
+[20/05/2020 15:15:40] [DEBUG] DB Connection to 135.250.193.176 via port 3306 Verified[0m
+[20/05/2020 15:15:40] [DEBUG] &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[2...</msg>
+<status status="PASS" starttime="20200515 15:41:00.741" endtime="20200515 15:41:53.249"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:41:00.740" endtime="20200515 15:41:53.249"></status>
+</kw>
+<msg timestamp="20200515 15:41:53.250" level="INFO">${RESULT} = [94mExexuting: AORREG-27
+[0m
+[20/05/2020 15:15:40] [DEBUG] DB Connection to 135.250.193.176 via port 3306 Verified[0m
+[20/05/2020 15:15:40] [DEBUG] &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[2...</msg>
+<status status="PASS" starttime="20200515 15:41:00.739" endtime="20200515 15:41:53.250"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Result of ${TC_ID} is \r\n ${RESULT}</arg>
+</arguments>
+<msg timestamp="20200515 15:41:53.250" level="WARN">Ignoring space after '\n' is deprecated. For more info see: https://github.com/robotframework/robotframework/issues/3333</msg>
+<msg timestamp="20200515 15:41:53.253" level="INFO">Result of AORREG-27 is 
+[94mExexuting: AORREG-27
+[0m
+[20/05/2020 15:15:40] [DEBUG] DB Connection to 135.250.193.176 via port 3306 Verified[0m
+[20/05/2020 15:15:40] [DEBUG] &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [DEBUG] Connection Successfull to 135.250.193.177 via port 9786
+[0m
+[20/05/2020 15:15:40] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='10' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";
+[20/05/2020 15:15:40] [DEBUG] Socket Created &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [TASK]  Sending alarm to 135.250.193.177 via port 9786
+[1m[20/05/2020 15:15:40] [ALARM]  ALARM: INSERT:COL_P_1274507::PU39043::CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION::SUBSCRIBER LINES_274507::Switching::2$274507$Gestor Ericsson OSS$GSMOSS$GBCNT1$SUBSCRIBER LINES_274507$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$4$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$15/05/2020 15:40:58$15/05/2020 15:40:58$BSC&amp;BTS_MBA_ERICSSON_2G$1$1$ARCH0348 - Concepci#n Del Bermejo TECO$274507$Switching$OSSRC,ManagedElement$274507$Concepci#n del Bermejo - Chaco$*** ALARM 084 A1/APT GBCNT1U 160101 2341|CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION|CELL SCTYPE CHTYPE CHRATE SPV|PU39043 BCCH | SDCCH |TCH FR 1| TCH HR 1| CBCH |END|$$PU39043$$10032$BTS_s/c_2$$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$RB T.CORRECTIVOS NORMAL TIPO 1$SECTORES Y CANALES$NEA - NEA$1C$15/05/2020 15:40:58$[0m
+[20/05/2020 15:15:40] [INFO]  Alarm sent Succesfully
+[0m
+[20/05/2020 15:15:41] [DEBUG] Socket Created &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:41] [TASK]  Sending alarm to 135.250.193.177 via port 9786
+[1m[20/05/2020 15:15:41] [ALARM]  ALARM: INSERT:COL_P_1300666::PU39043::CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION::SUBSCRIBER LINES_300666::Switching::2$300666$Gestor Ericsson OSS$GSMOSS$GBCNT1$SUBSCRIBER LINES_300666$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$4$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$15/05/2020 15:40:59$15/05/2020 15:40:59$BSC&amp;BTS_MBA_ERICSSON_2G$1$1$ARCH0348 - Concepci#n Del Bermejo TECO$300666$Switching$OSSRC,ManagedElement$300666$Concepci#n del Bermejo - Chaco$*** ALARM 084 A1/APT GBCNT1U 160101 2341|CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION|CELL SCTYPE CHTYPE CHRATE SPV|PU39043 BCCH | SDCCH |TCH FR 1| TCH HR 1| CBCH |END|$$PU39043$$10032$BTS_s/c_2$$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$RB T.CORRECTIVOS NORMAL TIPO 1$SECTORES Y CANALES$NEA - NEA$1C$15/05/2020 15:40:59$[0m
+[20/05/2020 15:15:41] [INFO]  Alarm sent Succesfully
+[0m
+[94mWaiting for 30 secs[0m
+[94m-[0m 0%[31m\[0m 1%[34m|[0m 2%[35m/[0m 3%[91m-[0m 4%[93m\[0m 5%[95m|[0m 5%[96m/[0m 6%[94m-[0m 7%[31m\[0m 8%[34m|[0m 9%[35m/[0m 10%[91m-[0m 10%[93m\[0m 11%[95m|[0m 12%[96m/[0m 13%[94m-[0m 14%[31m\[0m 15%[34m|[0m 15%[35m/[0m 16%[91m-[0m 17%[93m\[0m 18%[95m|[0m 19%[96m/[0m 20%[94m-[0m 20%[31m\[0m 21%[34m|[0m 22%[35m/[0m 23%[91m-[0m 24%[93m\[0m 25%[95m|[0m 25%[96m/[0m 26%[94m-[0m 27%[31m\[0m 28%[34m|[0m 29%[35m/[0m 30%[91m-[0m 30%[93m\[0m 31%[95m|[0m 32%[96m/[0m 33%[94m-[0m 34%[31m\[0m 35%[34m|[0m 35%[35m/[0m 36%[91m-[0m 37%[93m\[0m 38%[95m|[0m 39%[96m/[0m 40%[94m-[0m 40%[31m\[0m 41%[34m|[0m 42%[35m/[0m 43%[91m-[0m 44%[93m\[0m 45%[95m|[0m 45%[96m/[0m 46%[94m-[0m 47%[31m\[0m 48%[34m|[0m 49%[35m/[0m 50%[91m-[0m 50%[93m\[0m 51%[95m|[0m 52%[96m/[0m 53%[94m-[0m 54%[31m\[0m 55%[34m|[0m 55%[35m/[0m 56%[91m-[0m 57%[93m\[0m 58%[95m|[0m 59%[96m/[0m 60%[94m-[0m 60%[31m\[0m 61%[34m|[0m 62%[35m/[0m 63%[91m-[0m 64%[93m\[0m 65%[95m|[0m 65%[96m/[0m 66%[94m-[0m 67%[31m\[0m 68%[34m|[0m 69%[35m/[0m 70%[91m-[0m 70%[93m\[0m 71%[95m|[0m 72%[96m/[0m 73%[94m-[0m 74%[31m\[0m 75%[34m|[0m 75%[35m/[0m 76%[91m-[0m 77%[93m\[0m 78%[95m|[0m 79%[96m/[0m 80%[94m-[0m 80%[31m\[0m 81%[34m|[0m 82%[35m/[0m 83%[91m-[0m 84%[93m\[0m 85%[95m|[0m 85%[96m/[0m 86%[94m-[0m 87%[31m\[0m 88%[34m|[0m 89%[35m/[0m 90%[91m-[0m 90%[93m\[0m 91%[95m|[0m 92%[96m/[0m 93%[94m-[0m 94%[31m\[0m 95%[34m|[0m 95%[35m/[0m 96%[91m-[0m 97%[93m\[0m 98%[95m|[0m 99%[96m/[0m 100%Done waiting for 30
+
+[20/05/2020 15:15:41] [INFO]  Checking ID_Evento[0m
+[20/05/2020 15:15:41] [TASK]  Getting ID_EVENTO from DB
+[20/05/2020 15:15:41] [DEBUG] SELECT ID_EVENTO from astro_mba.EVENTOS_OMEGA_ASTRO where (NUMEROSECUENCIA = "274507" and NATURALEZA = "A")[0m
+[20/05/2020 15:15:41] [TASK]  Executing query........
+[20/05/2020 15:15:41] [DEBUG] SELECT ID_EVENTO from astro_mba.EVENTOS_OMEGA_ASTRO where (NUMEROSECUENCIA = "274507" and NATURALEZA = "A")[0m
+[20/05/2020 15:15:41] [TASK]  Succesfully executed the command
+[94mCLOSING DB CONNECTION 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[94mWaiting for 20 secs[0m
+[94m-[0m 1%[31m\[0m 2%[34m|[0m 3%[35m/[0m 5%[91m-[0m 6%[93m\[0m 7%[95m|[0m 8%[96m/[0m 10%[94m-[0m 11%[31m\[0m 12%[34m|[0m 13%[35m/[0m 15%[91m-[0m 16%[93m\[0m 17%[95m|[0m 18%[96m/[0m 20%[94m-[0m 21%[31m\[0m 22%[34m|[0m 23%[35m/[0m 25%[91m-[0m 26%[93m\[0m 27%[95m|[0m 28%[96m/[0m 30%[94m-[0m 31%[31m\[0m 32%[34m|[0m 33%[35m/[0m 35%[91m-[0m 36%[93m\[0m 37%[95m|[0m 38%[96m/[0m 40%[94m-[0m 41%[31m\[0m 42%[34m|[0m 43%[35m/[0m 45%[91m-[0m 46%[93m\[0m 47%[95m|[0m 48%[96m/[0m 50%[94m-[0m 51%[31m\[0m 52%[34m|[0m 53%[35m/[0m 55%[91m-[0m 56%[93m\[0m 57%[95m|[0m 58%[96m/[0m 60%[94m-[0m 61%[31m\[0m 62%[34m|[0m 63%[35m/[0m 65%[91m-[0m 66%[93m\[0m 67%[95m|[0m 68%[96m/[0m 70%[94m-[0m 71%[31m\[0m 72%[34m|[0m 73%[35m/[0m 75%[91m-[0m 76%[93m\[0m 77%[95m|[0m 78%[96m/[0m 80%[94m-[0m 81%[31m\[0m 82%[34m|[0m 83%[35m/[0m 85%[91m-[0m 86%[93m\[0m 87%[95m|[0m 88%[96m/[0m 90%[94m-[0m 91%[31m\[0m 92%[34m|[0m 93%[35m/[0m 95%[91m-[0m 96%[93m\[0m 97%[95m|[0m 98%[96m/[0m 100%Done waiting for 20
+
+[20/05/2020 15:15:41] [INFO]  Event with NUMEROSECUENCIA 274507 Not Entered EM, Retrying[0m
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 127 ERROR: str Retries left 0
+
+Traceback (most recent call last):
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 127, in get_ID_EVENTO
+    ID_EVENTO = str(result[0][0])
+IndexError: list index out of range
+[20/05/2020 15:15:41] [INFO]  ID_Evento details gathered
+Gathering ID_TAREA_GF[0m
+[20/05/2020 15:15:41] [INFO]  Verifying if TT is created[0m
+[20/05/2020 15:15:41] [TASK]  Executing query........
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 78 ERROR: str SELECT FK_INTERNALTICKETID from astro_platform.T_TROUBLETICKETALARM where ALARMID LIKE "%274507%"
+
+Traceback (most recent call last):
+  File "AORREG-27.py", line 78, in AORREG_27
+    try:ID_TAREA_GF = list(map(DB.get_ID_TAREA_GF,ID_EVENTO))
+UnboundLocalError: local variable 'ID_EVENTO' referenced before assignment
+[20/05/2020 15:15:41] [TASK]  Succesfully executed the command
+[94mCLOSING DB CONNECTION 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+list index out of range
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 771 ERROR: Exception Event not entered T_TROUBLETICKETALARM 
+
+Traceback (most recent call last):
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 771, in wrapper
+    Test(LOG)
+  File "AORREG-27.py", line 83, in AORREG_27
+    TT_details  =   DB.get_TROUBLETICKETALARM_details(NUMEROSECUENCIA[0],"FK_INTERNALTICKETID")
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 329, in get_TROUBLETICKETALARM_details
+    raise Exception ("Event not entered T_TROUBLETICKETALARM ")
+Exception: Event not entered T_TROUBLETICKETALARM
+[94mLog file path:
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/log/AORREG-27_15_05_2020_15_40_58.log[0m
+[20/05/2020 15:15:41] [DEBUG] 
+TestCase AORREG-27 failed after 52.1504127979 seconds
+[0m
+[94mResult file path :
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/result/AORREG-27.txt
+[0m
+[91m[20/05/2020 15:15:41] [FAIL]  Fri_May_15_2020_15_41_50:AORREG-27:135.250.193.177:FAILED:FM:Grouping of Alarms
+
+[0m
+[93mRolling back the changes made in Testcase[0m
+[20/05/2020 15:15:41] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='0' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";</msg>
+<status status="PASS" starttime="20200515 15:41:53.250" endtime="20200515 15:41:53.254"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${RESULT}</arg>
+<arg>${RESULT_SHOULD_BE}</arg>
+</arguments>
+<msg timestamp="20200515 15:41:53.255" level="FAIL">'[94mExexuting: AORREG-27
+[0m
+[20/05/2020 15:15:40] [DEBUG] DB Connection to 135.250.193.176 via port 3306 Verified[0m
+[20/05/2020 15:15:40] [DEBUG] &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [DEBUG] Connection Successfull to 135.250.193.177 via port 9786
+[0m
+[20/05/2020 15:15:40] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='10' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";
+[20/05/2020 15:15:40] [DEBUG] Socket Created &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [TASK]  Sending alarm to 135.250.193.177 via port 9786
+[1m[20/05/2020 15:15:40] [ALARM]  ALARM: INSERT:COL_P_1274507::PU39043::CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION::SUBSCRIBER LINES_274507::Switching::2$274507$Gestor Ericsson OSS$GSMOSS$GBCNT1$SUBSCRIBER LINES_274507$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$4$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$15/05/2020 15:40:58$15/05/2020 15:40:58$BSC&amp;BTS_MBA_ERICSSON_2G$1$1$ARCH0348 - Concepci#n Del Bermejo TECO$274507$Switching$OSSRC,ManagedElement$274507$Concepci#n del Bermejo - Chaco$*** ALARM 084 A1/APT GBCNT1U 160101 2341|CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION|CELL SCTYPE CHTYPE CHRATE SPV|PU39043 BCCH | SDCCH |TCH FR 1| TCH HR 1| CBCH |END|$$PU39043$$10032$BTS_s/c_2$$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$RB T.CORRECTIVOS NORMAL TIPO 1$SECTORES Y CANALES$NEA - NEA$1C$15/05/2020 15:40:58$[0m
+[20/05/2020 15:15:40] [INFO]  Alarm sent Succesfully
+[0m
+[20/05/2020 15:15:41] [DEBUG] Socket Created &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:41] [TASK]  Sending alarm to 135.250.193.177 via port 9786
+[1m[20/05/2020 15:15:41] [ALARM]  ALARM: INSERT:COL_P_1300666::PU39043::CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION::SUBSCRIBER LINES_300666::Switching::2$300666$Gestor Ericsson OSS$GSMOSS$GBCNT1$SUBSCRIBER LINES_300666$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$4$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$15/05/2020 15:40:59$15/05/2020 15:40:59$BSC&amp;BTS_MBA_ERICSSON_2G$1$1$ARCH0348 - Concepci#n Del Bermejo TECO$300666$Switching$OSSRC,ManagedElement$300666$Concepci#n del Bermejo - Chaco$*** ALARM 084 A1/APT GBCNT1U 160101 2341|CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION|CELL SCTYPE CHTYPE CHRATE SPV|PU39043 BCCH | SDCCH |TCH FR 1| TCH HR 1| CBCH |END|$$PU39043$$10032$BTS_s/c_2$$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$89#RED.DOR.SUPERVISION RED.CSRTA#VIGILANCIA DE RED.RDAM$RB T.CORRECTIVOS NORMAL TIPO 1$SECTORES Y CANALES$NEA - NEA$1C$15/05/2020 15:40:59$[0m
+[20/05/2020 15:15:41] [INFO]  Alarm sent Succesfully
+[0m
+[94mWaiting for 30 secs[0m
+[94m-[0m 0%[31m\[0m 1%[34m|[0m 2%[35m/[0m 3%[91m-[0m 4%[93m\[0m 5%[95m|[0m 5%[96m/[0m 6%[94m-[0m 7%[31m\[0m 8%[34m|[0m 9%[35m/[0m 10%[91m-[0m 10%[93m\[0m 11%[95m|[0m 12%[96m/[0m 13%[94m-[0m 14%[31m\[0m 15%[34m|[0m 15%[35m/[0m 16%[91m-[0m 17%[93m\[0m 18%[95m|[0m 19%[96m/[0m 20%[94m-[0m 20%[31m\[0m 21%[34m|[0m 22%[35m/[0m 23%[91m-[0m 24%[93m\[0m 25%[95m|[0m 25%[96m/[0m 26%[94m-[0m 27%[31m\[0m 28%[34m|[0m 29%[35m/[0m 30%[91m-[0m 30%[93m\[0m 31%[95m|[0m 32%[96m/[0m 33%[94m-[0m 34%[31m\[0m 35%[34m|[0m 35%[35m/[0m 36%[91m-[0m 37%[93m\[0m 38%[95m|[0m 39%[96m/[0m 40%[94m-[0m 40%[31m\[0m 41%[34m|[0m 42%[35m/[0m 43%[91m-[0m 44%[93m\[0m 45%[95m|[0m 45%[96m/[0m 46%[94m-[0m 47%[31m\[0m 48%[34m|[0m 49%[35m/[0m 50%[91m-[0m 50%[93m\[0m 51%[95m|[0m 52%[96m/[0m 53%[94m-[0m 54%[31m\[0m 55%[34m|[0m 55%[35m/[0m 56%[91m-[0m 57%[93m\[0m 58%[95m|[0m 59%[96m/[0m 60%[94m-[0m 60%[31m\[0m 61%[34m|[0m 62%[35m/[0m 63%[91m-[0m 64%[93m\[0m 65%[95m|[0m 65%[96m/[0m 66%[94m-[0m 67%[31m\[0m 68%[34m|[0m 69%[35m/[0m 70%[91m-[0m 70%[93m\[0m 71%[95m|[0m 72%[96m/[0m 73%[94m-[0m 74%[31m\[0m 75%[34m|[0m 75%[35m/[0m 76%[91m-[0m 77%[93m\[0m 78%[95m|[0m 79%[96m/[0m 80%[94m-[0m 80%[31m\[0m 81%[34m|[0m 82%[35m/[0m 83%[91m-[0m 84%[93m\[0m 85%[95m|[0m 85%[96m/[0m 86%[94m-[0m 87%[31m\[0m 88%[34m|[0m 89%[35m/[0m 90%[91m-[0m 90%[93m\[0m 91%[95m|[0m 92%[96m/[0m 93%[94m-[0m 94%[31m\[0m 95%[34m|[0m 95%[35m/[0m 96%[91m-[0m 97%[93m\[0m 98%[95m|[0m 99%[96m/[0m 100%Done waiting for 30
+
+[20/05/2020 15:15:41] [INFO]  Checking ID_Evento[0m
+[20/05/2020 15:15:41] [TASK]  Getting ID_EVENTO from DB
+[20/05/2020 15:15:41] [DEBUG] SELECT ID_EVENTO from astro_mba.EVENTOS_OMEGA_ASTRO where (NUMEROSECUENCIA = "274507" and NATURALEZA = "A")[0m
+[20/05/2020 15:15:41] [TASK]  Executing query........
+[20/05/2020 15:15:41] [DEBUG] SELECT ID_EVENTO from astro_mba.EVENTOS_OMEGA_ASTRO where (NUMEROSECUENCIA = "274507" and NATURALEZA = "A")[0m
+[20/05/2020 15:15:41] [TASK]  Succesfully executed the command
+[94mCLOSING DB CONNECTION 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[94mWaiting for 20 secs[0m
+[94m-[0m 1%[31m\[0m 2%[34m|[0m 3%[35m/[0m 5%[91m-[0m 6%[93m\[0m 7%[95m|[0m 8%[96m/[0m 10%[94m-[0m 11%[31m\[0m 12%[34m|[0m 13%[35m/[0m 15%[91m-[0m 16%[93m\[0m 17%[95m|[0m 18%[96m/[0m 20%[94m-[0m 21%[31m\[0m 22%[34m|[0m 23%[35m/[0m 25%[91m-[0m 26%[93m\[0m 27%[95m|[0m 28%[96m/[0m 30%[94m-[0m 31%[31m\[0m 32%[34m|[0m 33%[35m/[0m 35%[91m-[0m 36%[93m\[0m 37%[95m|[0m 38%[96m/[0m 40%[94m-[0m 41%[31m\[0m 42%[34m|[0m 43%[35m/[0m 45%[91m-[0m 46%[93m\[0m 47%[95m|[0m 48%[96m/[0m 50%[94m-[0m 51%[31m\[0m 52%[34m|[0m 53%[35m/[0m 55%[91m-[0m 56%[93m\[0m 57%[95m|[0m 58%[96m/[0m 60%[94m-[0m 61%[31m\[0m 62%[34m|[0m 63%[35m/[0m 65%[91m-[0m 66%[93m\[0m 67%[95m|[0m 68%[96m/[0m 70%[94m-[0m 71%[31m\[0m 72%[34m|[0m 73%[35m/[0m 75%[91m-[0m 76%[93m\[0m 77%[95m|[0m 78%[96m/[0m 80%[94m-[0m 81%[31m\[0m 82%[34m|[0m 83%[35m/[0m 85%[91m-[0m 86%[93m\[0m 87%[95m|[0m 88%[96m/[0m 90%[94m-[0m 91%[31m\[0m 92%[34m|[0m 93%[35m/[0m 95%[91m-[0m 96%[93m\[0m 97%[95m|[0m 98%[96m/[0m 100%Done waiting for 20
+
+[20/05/2020 15:15:41] [INFO]  Event with NUMEROSECUENCIA 274507 Not Entered EM, Retrying[0m
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 127 ERROR: str Retries left 0
+
+Traceback (most recent call last):
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 127, in get_ID_EVENTO
+    ID_EVENTO = str(result[0][0])
+IndexError: list index out of range
+[20/05/2020 15:15:41] [INFO]  ID_Evento details gathered
+Gathering ID_TAREA_GF[0m
+[20/05/2020 15:15:41] [INFO]  Verifying if TT is created[0m
+[20/05/2020 15:15:41] [TASK]  Executing query........
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 78 ERROR: str SELECT FK_INTERNALTICKETID from astro_platform.T_TROUBLETICKETALARM where ALARMID LIKE "%274507%"
+
+Traceback (most recent call last):
+  File "AORREG-27.py", line 78, in AORREG_27
+    try:ID_TAREA_GF = list(map(DB.get_ID_TAREA_GF,ID_EVENTO))
+UnboundLocalError: local variable 'ID_EVENTO' referenced before assignment
+[20/05/2020 15:15:41] [TASK]  Succesfully executed the command
+[94mCLOSING DB CONNECTION 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+[20/05/2020 15:15:41] [DEBUG] 
+[0m
+list index out of range
+[20/05/2020 15:15:41] [DEBUG]  Seems to be Error on line 771 ERROR: Exception Event not entered T_TROUBLETICKETALARM 
+
+Traceback (most recent call last):
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 771, in wrapper
+    Test(LOG)
+  File "AORREG-27.py", line 83, in AORREG_27
+    TT_details  =   DB.get_TROUBLETICKETALARM_details(NUMEROSECUENCIA[0],"FK_INTERNALTICKETID")
+  File "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/lib/CommonLIB.py", line 329, in get_TROUBLETICKETALARM_details
+    raise Exception ("Event not entered T_TROUBLETICKETALARM ")
+Exception: Event not entered T_TROUBLETICKETALARM
+[94mLog file path:
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/log/AORREG-27_15_05_2020_15_40_58.log[0m
+[20/05/2020 15:15:41] [DEBUG] 
+TestCase AORREG-27 failed after 52.1504127979 seconds
+[0m
+[94mResult file path :
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/result/AORREG-27.txt
+[0m
+[91m[20/05/2020 15:15:41] [FAIL]  Fri_May_15_2020_15_41_50:AORREG-27:135.250.193.177:FAILED:FM:Grouping of Alarms
+
+[0m
+[93mRolling back the changes made in Testcase[0m
+[20/05/2020 15:15:41] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='0' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";' does not contain 'PASSED:FM:Grouping of Alarms'</msg>
+<status status="FAIL" starttime="20200515 15:41:53.254" endtime="20200515 15:41:53.255"></status>
+</kw>
+<status status="FAIL" starttime="20200515 15:41:00.733" endtime="20200515 15:41:53.256"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn" type="teardown">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>${LogLevel}</arg>
+</arguments>
+<msg timestamp="20200515 15:41:53.257" level="INFO">Log level changed from INFO to INFO.</msg>
+<status status="PASS" starttime="20200515 15:41:53.256" endtime="20200515 15:41:53.257"></status>
+</kw>
+<tags>
+<tag>FM</tag>
+</tags>
+<status status="FAIL" starttime="20200515 15:41:00.730" endtime="20200515 15:41:53.257" critical="yes">'[94mExexuting: AORREG-27
+[0m
+[20/05/2020 15:15:40] [DEBUG] DB Connection to 135.250.193.176 via port 3306 Verified[0m
+[20/05/2020 15:15:40] [DEBUG] &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [DEBUG] Connection Successfull to 135.250.193.177 via port 9786
+[0m
+[20/05/2020 15:15:40] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='10' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";
+[20/05/2020 15:15:40] [DEBUG] Socket Created &lt;socket._socketobject object at 0x1b64360&gt;[0m
+[20/05/2020 15:15:40] [TASK]  Sending alarm to 135.250.193.177 via port 9786
+[1m[20/05/2020 15:15:40] [ALARM]  ALARM: INSERT:COL_P_1274507::PU39043::CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION::SUBSCRIBER LINES_274507::Switching::2$274507$Gestor Ericsson OSS$GSMOSS$GBCNT1$SUBSCRIBER LINES_274507$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$4$CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION$15/05/2020 15:40:58$15/05/2020 15:40:58$BSC&amp;BTS_MBA_ERICSSON_2G$1$1$ARCH0348 - Concepci#n Del Bermejo TECO$274507$Switching$OSSRC,ManagedElement$274...
+    [ Message content over the limit has been removed. ]
+    raise Exception ("Event not entered T_TROUBLETICKETALARM ")
+Exception: Event not entered T_TROUBLETICKETALARM
+[94mLog file path:
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/log/AORREG-27_15_05_2020_15_40_58.log[0m
+[20/05/2020 15:15:41] [DEBUG] 
+TestCase AORREG-27 failed after 52.1504127979 seconds
+[0m
+[94mResult file path :
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/result/AORREG-27.txt
+[0m
+[91m[20/05/2020 15:15:41] [FAIL]  Fri_May_15_2020_15_41_50:AORREG-27:135.250.193.177:FAILED:FM:Grouping of Alarms
+
+[0m
+[93mRolling back the changes made in Testcase[0m
+[20/05/2020 15:15:41] [TASK]  Executing QUERY: update astro_mba.ASIGNACION_ALARMAS set PERSISTENCIA='0' where ALARMA="CELL LOGICAL CHANNEL AVAILABILITY SUPERVISION";' does not contain 'PASSED:FM:Grouping of Alarms'</status>
+</test>
+<kw name="Closing Connection" library="common_keyword" type="teardown">
+<doc>Closing all opened connection</doc>
+<kw name="Close Connection" library="SSHLibrary">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20200515 15:41:53.282" endtime="20200515 15:41:53.283"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:41:53.281" endtime="20200515 15:41:53.284"></status>
+</kw>
+<doc>Wrapper for Platform regression</doc>
+<status status="FAIL" starttime="20200515 15:40:58.133" endtime="20200515 15:41:53.284"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">FM</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Run Platform Regression">Run Platform Regression</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200515 15:41:53.250" level="WARN">Ignoring space after '\n' is deprecated. For more info see: https://github.com/robotframework/robotframework/issues/3333</msg>
+</errors>
+</robot>

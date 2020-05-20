@@ -1,0 +1,6 @@
+HostName	= "135.250.138.217"
+User		= "aorAuto"
+Password    = "aorAuto@111"
+AutomationPath	= "/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/bin/"
+LogLevel	= "DEBUG"
+Environment	= "RATE4"

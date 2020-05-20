@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.6.3 on win32)" generated="20200515 15:39:19.083" rpa="false">
+<suite id="s1" name="Run Platform Regression" source="C:\Users\kruks\eclipse-workspace\RF\TestSuits\Standaloneregression\run_platform_regression.robot">
+<kw name="Open Connection And Login" library="common_keyword" type="setup">
+<doc>Connection established to remote machine 135.250.138.217</doc>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Trying to connect ${HostName}</arg>
+</arguments>
+<msg timestamp="20200515 15:39:20.198" level="INFO">Trying to connect 135.250.138.217</msg>
+<status status="PASS" starttime="20200515 15:39:20.198" endtime="20200515 15:39:20.198"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<arguments>
+<arg>${HostName}</arg>
+</arguments>
+<status status="PASS" starttime="20200515 15:39:20.199" endtime="20200515 15:39:20.202"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<arguments>
+<arg>${User}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200515 15:39:20.212" level="INFO">Logging into '135.250.138.217:22' as 'aorAuto'.</msg>
+<msg timestamp="20200515 15:39:22.597" level="INFO">Read output: Last login: Fri May 15 15:31:39 2020 from 10.143.176.59
+[aorAuto@pokhran Platform]$</msg>
+<msg timestamp="20200515 15:39:22.597" level="INFO">c:\users\kruks\appdata\local\continuum\anaconda3\lib\site-packages\cryptography\hazmat\backends\openssl\ciphers.py:114: UserWarning: implicit cast from 'char *' to a different pointer type: will be forbidden in the future (check that the types are as you expect; use an explicit ffi.cast() if they are correct)
+  operation
+c:\users\kruks\appdata\local\continuum\anaconda3\lib\site-packages\cryptography\hazmat\backends\openssl\ciphers.py:140: UserWarning: implicit cast from 'char *' to a different pointer type: will be forbidden in the future (check that the types are as you expect; use an explicit ffi.cast() if they are correct)
+  self._backend._ffi.from_buffer(data), len(data)</msg>
+<status status="PASS" starttime="20200515 15:39:20.203" endtime="20200515 15:39:22.603"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:39:20.196" endtime="20200515 15:39:22.606"></status>
+</kw>
+<test id="s1-t1" name="Execute AORREG-6986">
+<kw name="Run Test Case" library="common_keyword">
+<doc>Running platform regression individual test case</doc>
+<arguments>
+<arg>AORREG-6986</arg>
+<arg>PASSED:EA:Check for enable and disable of listener socket port</arg>
+<arg>None</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${IS_MULTI_TC}'=='None'</arg>
+<arg>Concatinate</arg>
+<arg>${TC_ID}</arg>
+<arg>.py</arg>
+<arg>ELSE</arg>
+<arg>Concatinate</arg>
+<arg>${IS_MULTI_TC}</arg>
+<arg>.py</arg>
+</arguments>
+<assign>
+<var>${TC_NAME}</var>
+</assign>
+<kw name="Concatinate" library="common_keyword">
+<doc>Concatination strings using built in keyword and return results</doc>
+<arguments>
+<arg>${TC_ID}</arg>
+<arg>.py</arg>
+</arguments>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${STR1}</arg>
+<arg>${STR2}</arg>
+</arguments>
+<assign>
+<var>${CATSTR}</var>
+</assign>
+<msg timestamp="20200515 15:39:22.635" level="INFO">${CATSTR} = AORREG-6986.py</msg>
+<status status="PASS" starttime="20200515 15:39:22.633" endtime="20200515 15:39:22.635"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:39:22.630" endtime="20200515 15:39:22.637"></status>
+</kw>
+<msg timestamp="20200515 15:39:22.640" level="INFO">${TC_NAME} = AORREG-6986.py</msg>
+<status status="PASS" starttime="20200515 15:39:22.628" endtime="20200515 15:39:22.642"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${Environment}</arg>
+<arg>_ENV</arg>
+</arguments>
+<assign>
+<var>${EnvName}</var>
+</assign>
+<msg timestamp="20200515 15:39:22.650" level="INFO">${EnvName} = RATE4_ENV</msg>
+<status status="PASS" starttime="20200515 15:39:22.645" endtime="20200515 15:39:22.650"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing cd ${AutomationPath};python ${TC_NAME}</arg>
+</arguments>
+<msg timestamp="20200515 15:39:22.654" level="INFO">Executing cd /home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/bin/;python AORREG-6986.py</msg>
+<status status="PASS" starttime="20200515 15:39:22.651" endtime="20200515 15:39:22.655"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${IS_MULTI_TC}'=='None'</arg>
+<arg>Executing Command</arg>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName}</arg>
+<arg>ELSE</arg>
+<arg>Executing Command</arg>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName} ${TC_ID} ${TC_ID}</arg>
+</arguments>
+<assign>
+<var>${RESULT}</var>
+</assign>
+<kw name="Executing Command" library="common_keyword">
+<doc>Executing commands in server</doc>
+<arguments>
+<arg>cd ${AutomationPath};python ${TC_NAME} ${EnvName}</arg>
+</arguments>
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>${CMD}</arg>
+</arguments>
+<assign>
+<var>${OUTPUT}</var>
+</assign>
+<msg timestamp="20200515 15:39:22.665" level="INFO">Executing command 'cd /home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/bin/;python AORREG-6986.py RATE4_ENV'.</msg>
+<msg timestamp="20200515 15:39:24.656" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20200515 15:39:24.657" level="INFO">${OUTPUT} = 2
+[94mExexuting: AORREG-6986
+[0m
+[93mLOG writing to SSH_Library[0m
+[94mPlease Wait connecting to 135.250.193.177 ...
+[0m
+[92mConnection Established to 135.250.193.177[0m
+[20/05/2020 15:15:39] ...</msg>
+<status status="PASS" starttime="20200515 15:39:22.663" endtime="20200515 15:39:24.657"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:39:22.660" endtime="20200515 15:39:24.659"></status>
+</kw>
+<msg timestamp="20200515 15:39:24.660" level="INFO">${RESULT} = 2
+[94mExexuting: AORREG-6986
+[0m
+[93mLOG writing to SSH_Library[0m
+[94mPlease Wait connecting to 135.250.193.177 ...
+[0m
+[92mConnection Established to 135.250.193.177[0m
+[20/05/2020 15:15:39] ...</msg>
+<status status="PASS" starttime="20200515 15:39:22.657" endtime="20200515 15:39:24.660"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Result of ${TC_ID} is \r\n ${RESULT}</arg>
+</arguments>
+<msg timestamp="20200515 15:39:24.661" level="WARN">Ignoring space after '\n' is deprecated. For more info see: https://github.com/robotframework/robotframework/issues/3333</msg>
+<msg timestamp="20200515 15:39:24.672" level="INFO">Result of AORREG-6986 is 
+2
+[94mExexuting: AORREG-6986
+[0m
+[93mLOG writing to SSH_Library[0m
+[94mPlease Wait connecting to 135.250.193.177 ...
+[0m
+[92mConnection Established to 135.250.193.177[0m
+[20/05/2020 15:15:39] [TASK]  Executing query........
+[20/05/2020 15:15:39] [TASK]  Succesfully executed the command
+[94mCLOSING DB CONNECTION 
+[0m
+[20/05/2020 15:15:39] [INFO]  Disabeling EA listener port: 9786[0m
+[20/05/2020 15:15:39] [INFO]  curl_disable_cmd: curl -k -X PUT https://135.250.193.177:11443/aor/api/v1/event/channels/24/disable -H 'Authorization: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBSUx0Z1pGWDB1Vnp4M2g0N2JDdFRNT1NLRG8xOHBHbV84TFBMTnJQU0FNIn0.eyJqdGkiOiI0OTQwZGVlMi01Y2Q1LTQ1MjAtOWIwYi1kYjIxMjUxYmFmNTkiLCJleHAiOjE1ODk1MzkxNjMsIm5iZiI6MCwiaWF0IjoxNTg5NTM3MzYzLCJpc3MiOiJodHRwczovLzEzNS4yNTAuMTkzLjE3ODo4NjY2L2F1dGgvcmVhbG1zL0FPUiIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9yLXNlcnZpY2UiLCJhY2NvdW50Il0sInN1YiI6ImI3NzU3MDRhLTBjODctNDY4YS04MWJkLWJiMWU2ZTM2NmE0MiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvci1lYSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjUyYTE0N2RmLWVlY2ItNDJlYi1hMTNjLTNiNTRmNGRmZTFhNyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJHVUVTVCIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb3ItZWEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFvci1zZXJ2aWNlIjp7InJvbGVzIjpbIkFPUl9TRVJWSUNFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMzUuMjUwLjEzOC4yMTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiYW9yLWVhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFvci1lYSIsImNsaWVudEFkZHJlc3MiOiIxMzUuMjUwLjEzOC4yMTcifQ.iEda_UEQ-v7Ii3vvlu0twC3G1GpCTV8Z0L09mZjFAIlTgyCdTutdDWC6f64E3tAJ972qu4e5FfFWvm8ojXyJO6Po5z5gnZrp3MwP5wc8JDYwjFKfHaBJr_hf1RiKzOfiAaO5-tPYNlKaFu_TAT27QyIf3a_xQeH9ICmNPjppbEPkPHsOpCzGQoL3oK2nWrw_yMFS4RI_AE6IzDmw8MvppjQPO08m-tEvC53WKy6bb8HmN5LLEw592otB73nunSWRJUfCYDplXlPNMNDkWarIHdbyDmeYGNL5Klbp58Qr3SmoRE8EhupVsWwi5JI37IZFE2k9YELkL3iPpuBNs70WpA' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 91443e5f-0b7b-87b5-c899-3848c244729f'[0m
+[94mPlease wait command is executing
+[0m
+[92mCommand 'curl -k -X PUT https://135.250.193.177:11443/aor/api/v1/event/channels/24/disable -H 'Authorization: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBSUx0Z1pGWDB1Vnp4M2g0N2JDdFRNT1NLRG8xOHBHbV84TFBMTnJQU0FNIn0.eyJqdGkiOiI0OTQwZGVlMi01Y2Q1LTQ1MjAtOWIwYi1kYjIxMjUxYmFmNTkiLCJleHAiOjE1ODk1MzkxNjMsIm5iZiI6MCwiaWF0IjoxNTg5NTM3MzYzLCJpc3MiOiJodHRwczovLzEzNS4yNTAuMTkzLjE3ODo4NjY2L2F1dGgvcmVhbG1zL0FPUiIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9yLXNlcnZpY2UiLCJhY2NvdW50Il0sInN1YiI6ImI3NzU3MDRhLTBjODctNDY4YS04MWJkLWJiMWU2ZTM2NmE0MiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvci1lYSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjUyYTE0N2RmLWVlY2ItNDJlYi1hMTNjLTNiNTRmNGRmZTFhNyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJHVUVTVCIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb3ItZWEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFvci1zZXJ2aWNlIjp7InJvbGVzIjpbIkFPUl9TRVJWSUNFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMzUuMjUwLjEzOC4yMTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiYW9yLWVhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFvci1lYSIsImNsaWVudEFkZHJlc3MiOiIxMzUuMjUwLjEzOC4yMTcifQ.iEda_UEQ-v7Ii3vvlu0twC3G1GpCTV8Z0L09mZjFAIlTgyCdTutdDWC6f64E3tAJ972qu4e5FfFWvm8ojXyJO6Po5z5gnZrp3MwP5wc8JDYwjFKfHaBJr_hf1RiKzOfiAaO5-tPYNlKaFu_TAT27QyIf3a_xQeH9ICmNPjppbEPkPHsOpCzGQoL3oK2nWrw_yMFS4RI_AE6IzDmw8MvppjQPO08m-tEvC53WKy6bb8HmN5LLEw592otB73nunSWRJUfCYDplXlPNMNDkWarIHdbyDmeYGNL5Klbp58Qr3SmoRE8EhupVsWwi5JI37IZFE2k9YELkL3iPpuBNs70WpA' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 91443e5f-0b7b-87b5-c899-3848c244729f'' executed Successfully
+[0m
+[20/05/2020 15:15:39] [INFO]  [0m
+[94mPlease wait command is executing
+[0m
+[92mCommand 'netstat -anp | grep -w 9786' executed Successfully
+[0m
+[20/05/2020 15:15:39] [INFO]  Disable status: [0m
+[20/05/2020 15:15:39] [INFO]  Enabeling EA listener port: 9786[0m
+[20/05/2020 15:15:39] [INFO]  curl_enable_cmd: curl -k -X PUT https://135.250.193.177:11443/aor/api/v1/event/channels/24/enable -H 'Authorization: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBSUx0Z1pGWDB1Vnp4M2g0N2JDdFRNT1NLRG8xOHBHbV84TFBMTnJQU0FNIn0.eyJqdGkiOiI0OTQwZGVlMi01Y2Q1LTQ1MjAtOWIwYi1kYjIxMjUxYmFmNTkiLCJleHAiOjE1ODk1MzkxNjMsIm5iZiI6MCwiaWF0IjoxNTg5NTM3MzYzLCJpc3MiOiJodHRwczovLzEzNS4yNTAuMTkzLjE3ODo4NjY2L2F1dGgvcmVhbG1zL0FPUiIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9yLXNlcnZpY2UiLCJhY2NvdW50Il0sInN1YiI6ImI3NzU3MDRhLTBjODctNDY4YS04MWJkLWJiMWU2ZTM2NmE0MiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvci1lYSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjUyYTE0N2RmLWVlY2ItNDJlYi1hMTNjLTNiNTRmNGRmZTFhNyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJHVUVTVCIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb3ItZWEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFvci1zZXJ2aWNlIjp7InJvbGVzIjpbIkFPUl9TRVJWSUNFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMzUuMjUwLjEzOC4yMTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiYW9yLWVhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFvci1lYSIsImNsaWVudEFkZHJlc3MiOiIxMzUuMjUwLjEzOC4yMTcifQ.iEda_UEQ-v7Ii3vvlu0twC3G1GpCTV8Z0L09mZjFAIlTgyCdTutdDWC6f64E3tAJ972qu4e5FfFWvm8ojXyJO6Po5z5gnZrp3MwP5wc8JDYwjFKfHaBJr_hf1RiKzOfiAaO5-tPYNlKaFu_TAT27QyIf3a_xQeH9ICmNPjppbEPkPHsOpCzGQoL3oK2nWrw_yMFS4RI_AE6IzDmw8MvppjQPO08m-tEvC53WKy6bb8HmN5LLEw592otB73nunSWRJUfCYDplXlPNMNDkWarIHdbyDmeYGNL5Klbp58Qr3SmoRE8EhupVsWwi5JI37IZFE2k9YELkL3iPpuBNs70WpA' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 91443e5f-0b7b-87b5-c899-3848c244729f'[0m
+[94mPlease wait command is executing
+[0m
+[92mCommand 'curl -k -X PUT https://135.250.193.177:11443/aor/api/v1/event/channels/24/enable -H 'Authorization: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBSUx0Z1pGWDB1Vnp4M2g0N2JDdFRNT1NLRG8xOHBHbV84TFBMTnJQU0FNIn0.eyJqdGkiOiI0OTQwZGVlMi01Y2Q1LTQ1MjAtOWIwYi1kYjIxMjUxYmFmNTkiLCJleHAiOjE1ODk1MzkxNjMsIm5iZiI6MCwiaWF0IjoxNTg5NTM3MzYzLCJpc3MiOiJodHRwczovLzEzNS4yNTAuMTkzLjE3ODo4NjY2L2F1dGgvcmVhbG1zL0FPUiIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYW9yLXNlcnZpY2UiLCJhY2NvdW50Il0sInN1YiI6ImI3NzU3MDRhLTBjODctNDY4YS04MWJkLWJiMWU2ZTM2NmE0MiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFvci1lYSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjUyYTE0N2RmLWVlY2ItNDJlYi1hMTNjLTNiNTRmNGRmZTFhNyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJHVUVTVCIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInZpZXctYXV0aG9yaXphdGlvbiIsInF1ZXJ5LWNsaWVudHMiLCJxdWVyeS11c2VycyIsIm1hbmFnZS1ldmVudHMiLCJtYW5hZ2UtcmVhbG0iLCJ2aWV3LWV2ZW50cyIsInZpZXctdXNlcnMiLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJhb3ItZWEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFvci1zZXJ2aWNlIjp7InJvbGVzIjpbIkFPUl9TRVJWSUNFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImNsaWVudEhvc3QiOiIxMzUuMjUwLjEzOC4yMTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudElkIjoiYW9yLWVhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFvci1lYSIsImNsaWVudEFkZHJlc3MiOiIxMzUuMjUwLjEzOC4yMTcifQ.iEda_UEQ-v7Ii3vvlu0twC3G1GpCTV8Z0L09mZjFAIlTgyCdTutdDWC6f64E3tAJ972qu4e5FfFWvm8ojXyJO6Po5z5gnZrp3MwP5wc8JDYwjFKfHaBJr_hf1RiKzOfiAaO5-tPYNlKaFu_TAT27QyIf3a_xQeH9ICmNPjppbEPkPHsOpCzGQoL3oK2nWrw_yMFS4RI_AE6IzDmw8MvppjQPO08m-tEvC53WKy6bb8HmN5LLEw592otB73nunSWRJUfCYDplXlPNMNDkWarIHdbyDmeYGNL5Klbp58Qr3SmoRE8EhupVsWwi5JI37IZFE2k9YELkL3iPpuBNs70WpA' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 91443e5f-0b7b-87b5-c899-3848c244729f'' executed Successfully
+[0m
+[20/05/2020 15:15:39] [INFO]  [0m
+[94mPlease wait command is executing
+[0m
+[92mCommand 'netstat -anp | grep -w 9786' executed Successfully
+[0m
+[20/05/2020 15:15:39] [INFO]  Enable status: tcp        0      0 135.250.193.177:9786    0.0.0.0:*               LISTEN      985/java            
+[0m
+[94mLog file path:
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/log/AORREG-6986_15_05_2020_15_39_20.log[0m
+[94mResult file path :
+/home/aorAuto/Automation/AOR/Platform/Regression/Python_Reg_suite/result/AORREG-6986.txt
+[0m
+[92m[20/05/2020 15:15:39] [PASS]  Fri_May_15_2020_15_39_22:AORREG-6986:135.250.193.177:PASSED:EA:Check for enable and disable of listener socket port
+
+[0m</msg>
+<status status="PASS" starttime="20200515 15:39:24.660" endtime="20200515 15:39:24.684"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${RESULT}</arg>
+<arg>${RESULT_SHOULD_BE}</arg>
+</arguments>
+<status status="PASS" starttime="20200515 15:39:24.688" endtime="20200515 15:39:24.692"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:39:22.621" endtime="20200515 15:39:24.696"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn" type="teardown">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>${LogLevel}</arg>
+</arguments>
+<msg timestamp="20200515 15:39:24.707" level="INFO">Log level changed from INFO to INFO.</msg>
+<status status="PASS" starttime="20200515 15:39:24.702" endtime="20200515 15:39:24.709"></status>
+</kw>
+<tags>
+<tag>EA</tag>
+</tags>
+<status status="PASS" starttime="20200515 15:39:22.606" endtime="20200515 15:39:24.714" critical="yes"></status>
+</test>
+<kw name="Closing Connection" library="common_keyword" type="teardown">
+<doc>Closing all opened connection</doc>
+<kw name="Close Connection" library="SSHLibrary">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20200515 15:39:24.777" endtime="20200515 15:39:24.783"></status>
+</kw>
+<status status="PASS" starttime="20200515 15:39:24.766" endtime="20200515 15:39:24.784"></status>
+</kw>
+<doc>Wrapper for Platform regression</doc>
+<status status="PASS" starttime="20200515 15:39:19.092" endtime="20200515 15:39:24.784"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">EA</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Run Platform Regression">Run Platform Regression</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200515 15:39:24.661" level="WARN">Ignoring space after '\n' is deprecated. For more info see: https://github.com/robotframework/robotframework/issues/3333</msg>
+</errors>
+</robot>

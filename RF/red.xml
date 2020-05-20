@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <variable name="${Hostname}" value="135.250.138.217"/>
+    <variable name="${Username}" value="aorAuto"/>
+    <variable name="${Password}" value="aorAuto@111"/>
+    <referencedLibrary type="PYTHON" name="SSHLibrary" path="C:/Users/kruks/AppData/Local/Continuum/anaconda3/Lib/site-packages/SSHLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ImapLibrary" path="C:/Users/kruks/AppData/Local/Continuum/anaconda3/Lib/site-packages/ImapLibrary/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <variableFiles path="RF/Resources/conf.py"/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

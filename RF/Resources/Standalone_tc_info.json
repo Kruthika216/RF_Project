@@ -1,0 +1,1151 @@
+{
+  "Test Cases" : {
+                  "AORREG-6986" : {
+                                  "Result"  : "PASSED:EA:Check for enable and disable of listener socket port",
+                                  "multiTest": "None",
+                                  "Module/Action":  "EA"
+                                },
+                  "AORREG-26":{
+                                  "Result"  : "PASSED:EA:Processing of Older events",
+                                  "multiTest": "None",
+                                  "Module/Action":  "EA"
+                                },
+                  "AORREG-7903":{
+                                  "Result"  : "PASSED:EA:Check EA time converstion during Daylight saving start time",
+                                  "multiTest": "AORREG-7903_7906_7908",
+                                  "Module/Action": "EA"
+                                },
+		  "AORREG-7906" : {
+                                  "Result"  : "PASSED:EA:Check EA time converstion during Daylight saving end time plus 1 hour",
+                                  "multiTest": "AORREG-7903_7906_7908",
+                                  "Module/Action":  "EA"
+                                },
+                  "AORREG-7908":{
+                                  "Result"  : "PASSED:EA:Check EA time converstion during Daylight saving start time minus 1 hour",
+                                  "multiTest": "AORREG-7903_7906_7908",
+                                  "Module/Action":  "EA"
+                                },
+                  "AORREG-7904":{
+                                  "Result"  : "PASSED:EA:Check EA time converstion during Daylight saving start time",
+                                  "multiTest": "None",
+                                  "Module/Action": "EA"
+                                },
+		  "AORREG-6715":{
+                                  "Result"  : "PASSED:EA:Event Forwarder end to end for Netcool",
+                                  "multiTest": "None",
+                                  "Module/Action": "EA"
+                                },
+		  "AORREG-1409":{
+                                  "Result"  : "PASSED:FXA-E2E:Event matched with positive filter NEF HUAWEI_DSLAMIP",
+                                  "multiTest": "None",
+                                  "Module/Action": "FXA-E2E"
+                                },
+		  "AORREG-1410":{
+                                  "Result"  : "PASSED:FXA-E2E:Verify NOKIA_DSLAM_STINGERIP inhibits in Event Manager",
+                                  "multiTest": "None",
+                                  "Module/Action": "FXA-E2E"
+                                },
+		  "AORREG-1411":{
+                                  "Result"  : "PASSED:FXA-E2E:Verify NOKIA_DSLAM_STINGERIP inhibits in Event Manager",
+                                  "multiTest": "None",
+                                  "Module/Action": "FXA-E2E"
+                                },
+		  "AORREG-63":{
+                                  "Result"  : "PASSED:FXA-E2E:Event from NEF NOKIA_DSLAM_STINGERIP process successfully",
+                                  "multiTest": "None",
+                                  "Module/Action": "FXA-E2E"
+                                },
+		  "AORREG-65":{
+                                  "Result"  : "PASSED:FXA-E2E:CTP acts on Events from NEF NOKIA_DSLAM_STINGERIP",
+                                  "multiTest": "None",
+                                  "Module/Action": "FXA-E2E"
+                                },
+		  "AORREG-2936":{
+                                  "Result"  : "PASSED:OH:E2E Process of Generic event injection to EA for PING",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-646":{
+                                  "Result"  : "PASSED:OH:Verify OH end to end functional components for VT MBA_ERICSSON_3G",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-2937":{
+                                  "Result"  : "PASSED:OH:E2E Process of Generic event injection to EA for CREARINC",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-2694":{
+                                  "Result"  : "PASSED:OH:Error when launching the agent (OH)",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-1501":{
+                                  "Result"  : "PASSED:OH:To check GetData request is successful",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-1500":{
+                                  "Result"  : "PASSED:OH:To check OH AgentExecution request is successful",
+                                  "multiTest": "None",
+                                  "Module/Action": "OH"
+                                },
+		  "AORREG-2318":{
+                                  "Result"  : "PASSED:EM:Check event has filtered after retention time",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-132":{
+                                  "Result"  : "PASSED:EM:Alarm processing by EM",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-189":{
+                                  "Result"  : "PASSED:EM:Event processing - Verify EOA Table",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-195":{
+                                  "Result"  : "PASSED:EM:Retention functionality - During Clear alarm",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-533":{
+                                  "Result"  : "PASSED:EM:Verify TeMIP reload scenario-1",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-536":{
+                                  "Result"  : "PASSED:EM:Verify TeMIP reload scenario-4",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-2321":{
+                                  "Result"  : "PASSED:EM:Event has been enriched",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-1582":{
+                                  "Result"  : "PASSED:EM:Verify E2E Event Processing Prevent alarm duplication",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-1574":{
+                                  "Result"  : "PASSED:EM:DEFAULT_CRITICAL Alarm processing by EM",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8050":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for PCS_EmFmTm",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8051":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for PCS_EmFmTm",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8052":{
+                                  "Result"  : "PASSED:EM:Verify PCS alarm retention",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8053":{
+                                  "Result"  : "PASSED:EM:verify invalid Inhibition filters",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8054":{
+                                  "Result"  : "PASSED:EM:verify Filter scenario 1",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8055":{
+                                  "Result"  : "PASSED:EM:verify Filter scenario 2",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8056":{
+                                  "Result"  : "PASSED:EM:verify Filter scenario 3",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8057":{
+                                  "Result"  : "PASSED:EM:verify Inhibition scenario 1",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8058":{
+                                  "Result"  : "PASSED:EM:verify Inhibition scenario 2",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8059":{
+                                  "Result"  : "PASSED:EM:verify Inhibition scenario 3",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8060":{
+                                  "Result"  : "PASSED:EM:verify Filter with TEXTO field without regular expresions",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8061":{
+                                  "Result"  : "PASSED:EM:verify Inhibition with TEXTO field with out regular expresions",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8064":{
+                                  "Result"  : "PASSED:EM:verify Inhibition scenario 4",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8084":{
+                                  "Result"  : "PASSED:EM:verify Filter with TEXTO field with regular expresions",
+                                  "multiTest": "None",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8051":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for PCS_EmFmTm",
+                                  "multiTest": "filter",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8211":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for TRA_EmFmTm",
+                                  "multiTest": "filter",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8149":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for IPM_EmFmTm",
+                                  "multiTest": "filter",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8186":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for FXA_EmFmTm",
+                                  "multiTest":"filter",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8173":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for VAS_EmFmTm",
+                                  "multiTest":"filter",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8189":{
+                                  "Result"  : "PASSED:EM:Verify filter is applied for FXS_EmFmTm",
+                                  "multiTest":"filter",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8213":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for TRA_EmFmTm",
+                                  "multiTest": "inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8050":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for PCS_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8148":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for IPM_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8185":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for FXA_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-1577":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for MBA_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8172":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for VAS_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8198":{
+                                  "Result"  : "PASSED:EM:Verify inhibition is applied for FXS_EmFmTm",
+                                  "multiTest":"inhibition",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8679":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for TRA_EmFmTm",
+                                  "multiTest": "retention",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-8052":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for PCS_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8149":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for IPM_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8184":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for FXA_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8171":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for VAS_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-8197":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for FXS_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+                  "AORREG-1578":{
+                                  "Result"  : "PASSED:EM:Verify retention is applied for MBA_EmFmTm",
+                                  "multiTest":"retention",
+                                  "Module/Action": "EM"
+                                },
+		  "AORREG-16":{
+                                  "Result"  : "PASSED:FM:Active alarm after Clear",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-17":{
+                                  "Result"  : "PASSED:Generic event processing",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-20":{
+                                  "Result"  : "PASSED:FM:Test if the repetition object created gets deleted from the work memory",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-21":{
+                                  "Result"  : "PASSED:FM:Verify Spontaneous alarms are processed",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-32":{
+                                  "Result"  : "PASSED:FM:Generic event processing",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-33":{
+                                  "Result"  : "PASSED:FM:Test the rule Massive rule Marcable Object NO",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-6754":{
+                                  "Result"  : "PASSED:FM:Active alarm without clear is sent within the persistence time and after persistence time",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-2824":{
+                                  "Result"  : "PASSED:FM:The FM task cannot be executed because is impacted by a permanent inhibition",
+                                  "multiTest":"None",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8249":{
+                                  "Result"  : "PASSED:FM:Verify massivas is applied for PCS_EmFmTm",
+                                  "multiTest":"massivas",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8166":{
+                                  "Result"  : "PASSED:FM:Verify massivas is applied for VAS_EmFmTm",
+                                  "multiTest":"massivas",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8617":{
+                                  "Result"  : "PASSED:FM:Verify massivas is applied for TRA_EmFmTm",
+                                  "multiTest":"massivas",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8192":{
+                                  "Result"  : "PASSED:FM:Verify massivas is applied for FXS_EmFmTm",
+                                  "multiTest":"massivas",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-15":{
+                                  "Result"  : "PASSED:FM:Verify massivas is applied for MBA_EmFmTm",
+                                  "multiTest":"massivas",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8151":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for IPM_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-10":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for MBA_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8196":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for FXS_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8183":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for FXA_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8170":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for VAS_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8624":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for PCS_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8625":{
+                                  "Result"  : "PASSED:FM:Verify Persistence Rule Alarm with clear for TRA_EmFmTm",
+                                  "multiTest":"percistancia",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-12":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for MBA_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8167":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for VAS_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8154":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for IPM_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8619":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for PCS_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8618":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for TRA_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8180":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for FXA_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8193":{
+                                  "Result"  : "PASSED:FM:Verify short time repetition is applied for FXS_EmFmTm",
+                                  "multiTest":"short_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-13":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for MBA_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8153":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for IPM_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8168":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for VAS_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8194":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for FXS_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8181":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for FXA_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8620":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for PCS_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8621":{
+                                  "Result"  : "PASSED:FM:Verify long time repetition is applied for TRA_EmFmTm",
+                                  "multiTest":"long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8152":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for IPM_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-14":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for MBA_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8169":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for VAS_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8195":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for FXS_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8182":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for FXA_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8622":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for PCS_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8623":{
+                                  "Result"  : "PASSED:FM:Verify very long time repetition is applied for TRA_EmFmTm",
+                                  "multiTest":"very_long_repetition",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8660":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for VAS_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-27":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for MBA_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+		  "AORREG-8658":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for FXS_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8662":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for PCS_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8663":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for TRA_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8659":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for FXA_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-8661":{
+                                  "Result"  : "PASSED:FM:Verify Group_Of_Alarms for IPM_EmFmTm",
+                                  "multiTest":"grouping_of_alarms",
+                                  "Module/Action": "FM"
+                                },
+                  "AORREG-7686":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for NSN_2G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7687":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for NSN_3G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7678":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for HUAWEI_2G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7689":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_2G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7690":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_3G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7676":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for HUAWEI_3G NEF",
+                                  "multiTest":"MBA_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7677":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for HUAWEI_GGSN NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7670":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_AXE NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7671":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_EPC_EPG NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7673":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_EPC_MME NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7672":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for ERICSSON_MGW_C NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-7683":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for HUAWEI_CG NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+		  "AORREG-7684":{
+                                  "Result"  : "PASSED:NEF-E2E:E2E for HUAWEI_DRA NEF",
+                                  "multiTest":"PCS_E2E",
+                                  "Module/Action": "NEF-E2E"
+                                },
+                  "AORREG-1528":{
+                                  "Result"  : "PASSED:BTP:Event match BTP conditions - Load a BTP using any available method",
+                                  "multiTest":"AORREG-1528_1530_1531_1532",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1530":{
+                                  "Result"  : "PASSED:BTP:Event match BTP conditions - Force an event during the BTP execution period",
+                                  "multiTest":"AORREG-1528_1530_1531_1532",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1531":{
+                                  "Result"  : "PASSED:BTP:Event matches BTP conditions - Force an event during the BTP execution period",
+                                  "multiTest":"AORREG-1528_1530_1531_1532",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1532":{
+                                  "Result"  : "PASSED:BTP:Event match BTP conditions - BTP execution period events do not match any BTP",
+                                  "multiTest":"AORREG-1528_1530_1531_1532",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2763":{
+                                  "Result"  : "PASSED:BTP:BTP REST_API - insert into T_BTP",
+                                  "multiTest":"AORREG-2763_2766_2767",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2766":{
+                                  "Result"  : "PASSED:BTP:BTP REST_API - UPDATE into T_BTP",
+                                  "multiTest":"AORREG-2763_2766_2767",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2767":{
+                                  "Result"  : "PASSED:BTP:BTP REST_API - DELETE from T_BTP",
+                                  "multiTest":"AORREG-2763_2766_2767",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1524":{
+                                  "Result"  : "PASSED:BTP:BTP CSV file interface - Input Csv file contains a line to insert a BTP with a BTP ID not existing",
+                                  "multiTest":"AORREG-1524_1525_1526_1527",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1525":{
+                                  "Result"  : "PASSED:BTP:BTP CSV file interface - Input Csv file contains a line to update BTP",
+                                  "multiTest":"AORREG-1524_1525_1526_1527",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1526":{
+                                  "Result"  : "PASSED:BTP:BTP CSV file interface - Existing BTP deletion",
+                                  "multiTest":"AORREG-1524_1525_1526_1527",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1527":{
+                                  "Result"  : "PASSED:BTP:BTP CSV file interface - Invalid CSV",
+                                  "multiTest":"AORREG-1524_1525_1526_1527",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1538":{
+                                  "Result"  : "PASSED:BTP:BTP decission matrix depending upon - APROVAL = 'YES' AND IMPACT = 'YES'",
+                                  "multiTest":"AORREG-1538_1539_1544",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1539":{
+                                  "Result"  : "PASSED:BTP:BTP decission matrix depending upon - APROVAL = 'YES' AND FORECASTED IMPACT = 'NO'",
+                                  "multiTest":"AORREG-1538_1539_1544",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1544":{
+                                  "Result"  : "PASSED:BTP:BTP decission matrix depending upon - APROVAL = 'NO' IMPACT = 'YES'",
+                                  "multiTest":"AORREG-AORREG-1538_1539_1544",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2772":{
+                                  "Result"  : "PASSED:BTP:Ensure BTP window can be shifted before the actual expiry time",
+                                  "multiTest":"AORREG-2772_2773",
+                                  "Module/Action": "BTP"
+                                },
+
+		  "AORREG-2773":{
+                                  "Result"  : "PASSED:BTP:Ensure BTP window can be shifted after the actual expiry time",
+                                  "multiTest":"AORREG-2772_2773",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2642":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with primary service impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2642_2646_2648_2647",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2646":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with secondary service impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2642_2646_2648_2647",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2648":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with multiple services impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2642_2646_2648_2647",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2647":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with service not impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2642_2646_2648_2647",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2650":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with primary service impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2649_2650_2651_2652",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2651":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with secondary service impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2649_2650_2651_2652",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2649":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with multiple services impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2649_2650_2651_2652",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2652":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with service not impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2649_2650_2651_2652",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2624":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with secondary service impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2623_2624_2625_2626",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2625":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with multiple services impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2623_2624_2625_2626",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2623":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with primary service impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2623_2624_2625_2626",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2626":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with service not impacted included in BTP and received after BTP start",
+                                  "multiTest":"AORREG-2623_2624_2625_2626",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2557":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with primary service impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2557_2558_2621_2622",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2558":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with secondary service impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2557_2558_2621_2622",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2621":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with multiple services impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2557_2558_2621_2622",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-2622":{
+                                  "Result"  : "PASSED:BTP:Correlated alarm with service not impacted included in BTP and received before BTP start",
+                                  "multiTest":"AORREG-2557_2558_2621_2622",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1533":{
+                                  "Result"  : "PASSED:BTP:Timing for matching BTP conditions - 1",
+                                  "multiTest":"AORREG-1533_1537",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1537":{
+                                  "Result"  : "PASSED:BTP:Timing for matching BTP conditions - 5",
+                                  "multiTest":"AORREG-1533_1537",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1547":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP conditions- APROVAL = YES & IMPACT = YES",
+                                  "multiTest":"AORREG-1547_1549",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1549":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP - APROVAL = YES & IMPACT = YES",
+                                  "multiTest":"AORREG-1547_1549",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1735":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP - Delete the BTP",
+                                  "multiTest":"AORREG-1735_1736",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1736":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP - Step 6",
+                                  "multiTest":"AORREG-1735_1736",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1737":{
+                                  "Result"  : "PASSED:BTP:Multiple simultaneous BTPs execution - Step 1",
+                                  "multiTest":"None",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1738":{
+                                  "Result"  : "PASSED:BTP:BTP's Referential Tickets are not impacted by Clear Event Processes",
+                                  "multiTest":"None",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1742":{
+                                  "Result"  : "PASSED:BTP:Discard Non Approved BTPs - Step 2",
+                                  "multiTest":"None",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1541":{
+                                  "Result"  : "PASSED:BTP:Mutiple events matching and not matching a BTP conditions - APROVAL = NO OR IMPACT = NO",
+                                  "multiTest":"AORREG-1541_1747",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1747":{
+                                  "Result"  : "PASSED:BTP:Mutiple events matching and not matching a BTP conditions - Step 1",
+                                  "multiTest":"AORREG-1541_1747",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1749":{
+                                  "Result"  : "PASSED:BTP:BTP's Referential Tickets are not impacted by Clear Event Processes",
+                                  "multiTest":"None",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1999":{
+                                  "Result"  : "PASSED:BTP:BTP detection with special characters",
+                                  "multiTest":"None",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-1548":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP conditions- APROVAL = NO OR IMPACT = NO",
+                                  "multiTest":"AORREG-1548_1734",
+                                  "Module/Action": "BTP"
+                                },
+                  "AORREG-1734":{
+                                  "Result"  : "PASSED:BTP:BTP duration can be extended after event matching BTP conditions",
+                                  "multiTest":"AORREG-1548_1734",
+                                  "Module/Action": "BTP"
+                                },
+		  "AORREG-2084":{
+                                  "Result"  : "PASSED:Agents:Validate CEP moves OPENACTIVE Ticket to CLOSED.CANCELLED",
+                                  "multiTest":"None",
+                                  "Module/Action": "Agent"
+                                },
+		  "AORREG-8204":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for MBA",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+		  "AORREG-8205":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for PCS",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+		  "AORREG-8161":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for VAS",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"                              },
+		  "AORREG-8160":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for IPM",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8203":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for TRA",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8187":{
+                                  "Result"  : "PASSED:Agent:Verify planned jobs is running for FXS",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+		   "AORREG-8174":{
+                                  "Result"  : "PASSED:Agents:Verify planned jobs is running for FXA",
+                                  "multiTest":"Planned_jobs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-1586":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for MBA",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8207":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for TRA",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8162":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for VAS",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8159":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for IPM",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8206":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for PCS",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+                  "AORREG-8175":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for FXA",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+		  "AORREG-8188":{
+                                  "Result"  : "PASSED:Agent:Verify agent logs created for FXS",
+                                  "multiTest":"Agent_logs",
+                                  "Module/Action": "Agent"
+                                },
+		  "AORREG-2847":{
+                                  "Result"  : "PASSED:TT:Synchronization single ticket with External Server",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-2004":{
+                                  "Result"  : "PASSED:TT:Synchronization from AOR to customer TroubleTicket -SUCCESS",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-2007":{
+                                  "Result"  : "PASSED:TT:Synchronization from customer TT system to AOR- SUCCESS",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-5480":{
+                                  "Result"  : "PASSED:TT:Verification of properties file and xslts",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-5426":{
+                                  "Result"  : "PASSED:TT:Verification of T_TROUBLETICKET_SUM table by calling process P_TicketSummaryToday",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2836":{
+                                  "Result"  : "PASSED:TT:Check AOR DB Trouble Ticket associated agent log table and fields after automatic ticket creation",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-2841":{
+                                  "Result"  : "PASSED:TT:Validate CEP moves OPENACTIVE Ticket to CLOSED.CANCELLED",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2855":{
+                                  "Result"  : "PASSED:TT:Verify the creation of Ticket with all paramters sent to external system",
+                                  "multiTest":"AORREG-2855_2856_2857",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2856":{
+                                  "Result"  : "PASSED:TT:Verify the parameters sent to external system during modification request",
+                                  "multiTest":"AORREG-2855_2856_2857",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2857":{
+                                  "Result"  : "PASSED:TT:Verify the creation of Ticket with all paramters sent to external system",
+                                  "multiTest":"AORREG-2855_2856_2857",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-71":{
+                                  "Result"  : "PASSED:TT:Verification of T_TROUBLETICKETALARM table",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2835":{
+                                  "Result"  : "PASSED:TT:Check AOR database Trouble Ticket associated alarm table and fields after automatic ticket creation",
+                                  "multiTest":"None",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-8611":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for TRA_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8610":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for PCS_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8613":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for VAS_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8158":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for IPM_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-2084":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for MBA_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8176":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for FXA_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-8189":{
+                                  "Result"  : "PASSED:TT:Verify CEP gets triggered as per schedule for FXS_EmFmTm",
+                                  "multiTest":"CEP",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-8616":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for TRA_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8614":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for PCS_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8165":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for VAS_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8156":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for IPM_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-65":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for MBA_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8178":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for FXA_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+                  "AORREG-8191":{
+                                  "Result"  : "PASSED:TT:Verify ticket is associated for FXS_EmFmTm",
+                                  "multiTest":"CTP",
+                                  "Module/Action": "TT"
+                                },
+		  "AORREG-5623":{
+                                  "Result"  : "PASSED:INV:Validation of TroubleTicket to Inventory call when ACCESS_WS=0, data is in CACHE",
+                                  "multiTest":"None",
+                                  "Module/Action": "INV"
+                                },
+                  "AORREG-1309":{
+                                  "Result"  : "PASSED:INV:MBC_Inventory Request - Response verification",
+                                  "multiTest":"None",
+                                  "Module/Action": "INV"
+                                },
+		  "AORREG-2111":{
+                                  "Result"  : "PASSED:INV:Verify Synchronous response from Inventory webservice for all modules",
+                                  "multiTest":"None",
+                                  "Module/Action": "INV"
+                                },
+                  "AORREG-5620":{
+                                  "Result"  : "PASSED:INV:Validation of EM/Agent to Inventory call when ACCESS_WS=1, data available in cache",
+                                  "multiTest":"None",
+                                  "Module/Action": "INV"
+                                },
+		  "AORREG-203":{
+                                  "Result"  : "PASSED:INV:Inventory Request - Response verification",
+                                  "multiTest":"None",
+                                  "Module/Action": "INV"
+                                },
+                  "AORREG-8013":{
+                                  "Result"  : "PASSED:TM:To verify global limit is working as expected",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-8014":{
+                                  "Result"  : "PASSED:TM:To verify limit per exchange(CENTRAL) is applied on any tech area(MBA)",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-8015":{
+                                  "Result"  : "PASSED:TM:To verify limits is applied on type and central in any tech area",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-4899":{
+                                  "Result"  : "PASSED:TM:Limits per Group",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-4900":{
+                                  "Result"  : "PASSED:TM:Limits per Group and Exchange",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-4897":{
+                                  "Result"  : "PASSED:TM:Limits per Type",
+                                  "multiTest":"TM_LIMITS",
+                                  "Module/Action": "TM"
+                                },
+		  "AORREG-2608":{
+                                  "Result"  : "PASSED:NFR-Reqts:Verify log name patterns",
+                                  "multiTest":"None",
+                                  "Module/Action": "NFR-Reqts"
+                                },
+		  "AORREG-2617":{
+                                  "Result"  : "PASSED:NFR-Reqts:Verify single root path, different to the logs path, to locate all trace files",
+                                  "multiTest":"None",
+                                  "Module/Action": "NFR-Reqts"
+                                },
+		  "AORREG-1587":{
+                                  "Result"  : "PASSED:NFR-Reqts:Verify Service Logs",
+                                  "multiTest":"None",
+                                  "Module/Action": "NFR-Reqts"
+                                },
+                  "AORREG-70":{
+                                  "Result"  : "PASSED:NFR-Reqts:Verification of detailed log information",
+                                  "multiTest":"None",
+                                  "Module/Action": "NFR-Reqts"
+                                },
+		  "AORREG-8241":{
+                                  "Result"  : "PASSED:NiFi:Verify nifi is stopped",
+                                  "multiTest":"AORREG-8241_42",
+                                  "Module/Action": "NiFi"
+                                },
+		  "AORREG-8242":{
+                                  "Result"  : "PASSED:NiFi:Verify nifi is started",
+                                  "multiTest":"AORREG-8241_42",
+                                  "Module/Action": "NiFi"
+                                },
+
+		  "AORREG-8069":{
+                                  "Result"  : "PASSED:CORBA:Verify Event process by CORBA event adapter",
+                                  "multiTest":"AORREG-8245_8068",
+                                  "Module/Action": "CORBA"
+                                },
+		  "AORREG-8245":{
+                                  "Result"  : "PASSED:CORBA:Verify Event process by CORBA event adapter for namin",
+                                  "multiTest":"AORREG-8245_8068",
+                                  "Module/Action": "CORBA"
+                                }
+
+                }
+}

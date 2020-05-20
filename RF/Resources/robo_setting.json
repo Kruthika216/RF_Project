@@ -1,0 +1,11 @@
+{
+    "Settings"  : {
+                    "Documentation" : "Wrapper for Platform regression",
+                    "Resource"      : "${CURDIR}${/}../../Resources/common_keyword.resource",
+                    "Variables"     : "${CURDIR}${/}../../Resources/conf.py",
+                    "Suite Setup"   : "Open Connection And Login",
+                    "Suite Teardown": "Closing Connection",
+                    "Test Teardown" : "Set Log Level    ${LogLevel}",
+                    "Test Template" : "Run Test Case"
+                  }
+}
